@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo-List</title>
+  </head>
+  <body class="body" id="body">
+    <header>
+      <section class="img-header" id="imagem-header">
+        <div class="container-butaoTheme">
+          <h1>TODO</h1>
+          <button class="butaoThemeDark" id="butaoTheme" onclick="mudarTema()"></button>
+        </div>
+        <input
+          maxlength="33"
+          name="nova-tarefa"
+          class="input-tarefa-dark"
+          type="text"
+          id="novaTarefa"
+          placeholder="Criar uma nova tarefa..."
+        />
+        <button onclick="adicionarTarefa()" id="send"></button>
+      </section>
+    </header>
+    <main>
+      <div id="campo-tarefas" class="container"></div>
+      <div class="container-filtros" id="container-filtros">
+        <p class="numero-de-tarefas">
+          <span id="tarefas-length"></span>
+          items left
+        </p>
+        <div class="filtros">
+            <p class="ativado" id="all" onclick="todas()">All</p>
+            <p id="active" onclick="ativas()">Active</p>
+            <p id="completed" onclick="completas()">Completed</p>
+        </div>
+        <p>Clear Completed</p>
+      </div>
+    </main>
+    <footer>
+        <p class="drag-drop">Drag and drop to reorder list</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

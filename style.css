@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.body{
+    background-color: hsl(235, 21%, 11%);
+}
+
+.body-white{
+    background-color: hsl(236, 33%, 92%);
+}
+
+#send{
+    background-color: none;
+    border: none;
+}
+
+.img-header{
+    width: 100%;
+    height: 300px;
+    background-image: url('img/bg-desktop-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.img-header-white{
+    width: 100%;
+    height: 300px;
+    background-image: url('img/bg-desktop-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.container-butaoTheme{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.container-butaoTheme h1{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 13px;
+}
+
+.butaoThemeDark{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url('img/icon-sun.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.butaoThemeWhite{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url('img/icon-moon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.input-tarefa-dark{
+    width: 500px;
+    height: 60px;
+    background-color: hsl(235, 24%, 19%);
+    border: none;
+    border-radius: 4px;
+    padding-left: 20px;
+    color: hsl(234, 39%, 85%);
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.input-tarefa-white{
+    width: 500px;
+    height: 60px;
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 4px;
+    padding-left: 20px;
+    color: hsl(233, 14%, 35%);
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    margin-top: -50px;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 4px;
+}
+
+.container-white{
+    width: 500px;
+    margin: auto;
+    margin-top: -50px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 4px;
+}
+
+
+.container-tarefas{
+    width: 500px;
+    margin: auto;
+    border: none;
+    border-radius: 4px 4px 0px 0px;
+    color: hsl(234, 39%, 85%);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 0.5px solid hsl(234, 39%, 85%);
+}
+
+.container-white .container-tarefas{
+    color: hsl(233, 14%, 35%);
+}
+
+
+
+.container-tarefas p{
+    width: 400px;
+    padding: 30px 20px;
+}
+
+
+.butao-tarefa-excluir{
+    margin-left: 17px;
+    width: 15px;
+    height: 15px;
+    background: none;
+    background-image: url('img/icon-cross.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+
+.butao-tarefa-finalizada{
+    border: solid 1px;
+     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: none;
+    border: solid 1px hsl(280, 87%, 65%);
+    cursor: pointer;
+}
+
+ .butao-tarefa{
+    background-image: url("img/icon-check.svg"), linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%)); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer; 
+} 
+
+
+
+
+
+.container-filtros{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+
+.container-filtros-white{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+
+
+.container-filtros p, .container-filtros-white p{
+    color: hsl(233, 14%, 35%);
+    cursor: pointer; 
+}
+
+.container-filtros p:hover{
+    color: white;
+}
+
+.container-filtros-white p:hover{
+    color: hsl(235, 21%, 11%);
+}
+
+.filtros{
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.container-filtros .ativado, .container-filtros-white .ativado{
+    color: hsl(220, 98%, 61%);
+}
+
+.butao-t{
+    display: none;
+}
+
+.drag-drop{
+    margin-top: 50px;
+    text-align: center;
+    color: hsl(233, 14%, 35%);
+}
+
+@media(max-width: 540px){
+    .img-header{
+        background-image: url('img/bg-mobile-dark.jpg');
+    }
+
+    .img-header-white{
+        background-image: url('img/bg-desktop-light.jpg');
+    }
+
+    .container-butaoTheme{
+        width: 360px;
+    }
+
+    .input-tarefa-dark, .input-tarefa-white{
+        width: 330px;
+        height: 50px;
+    }
+
+    .container, .container-white {
+        width: 330px;
+    }
+
+    .container-tarefas{
+        width: 330px;
+    }
+
+    .container-tarefas p{
+        width: 250px;
+        padding: 10px 10px;
+    }
+
+    .container-filtros{
+        width: 330px;
+    }
+    
+    .container-filtros-white{
+        width: 330px;
+    }
+
+    .container-filtros p, .container-filtros-white p{
+        color: hsl(233, 14%, 35%);
+        cursor: pointer; 
+        font-size: 12px;
+    }
+
+    .filtros{
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+    }
+    
+}
+
+
