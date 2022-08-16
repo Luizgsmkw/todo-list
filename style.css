@@ -137,7 +137,7 @@ main{
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 0.5px solid hsl(234, 39%, 85%);
+    border-bottom: 0.2px solid hsl(236, 9%, 61%);
 }
 
 .container-white .container-tarefas{
@@ -148,7 +148,7 @@ main{
 
 .container-tarefas p{
     width: 400px;
-    padding: 30px 20px;
+    padding: 15px 20px;
 }
 
 
