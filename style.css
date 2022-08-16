@@ -122,6 +122,10 @@
     border-radius: 4px;
 }
 
+main{
+    padding-left: 10px;
+}
+
 
 .container-tarefas{
     width: 500px;
